@@ -73,6 +73,59 @@ refs:
 
 ### Compare/contrast use of ArrayList / LinkedList / HashMap / HashSet / TreeSet
 
+1. ArrayList:
+- The ArrayList class is a resizable array, which can be found in the java.util package.
+- The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an ArrayList whenever.
+- Elements in an ArrayList are objects.
+- Permits all elements, including null.
+- The add operation runs in amortized constant time, that is, adding n elements requires O(n) time. The constant factor is low compared to that for the LinkedList implementation.
+- An application can increase the capacity of an ArrayList instance before adding a large number of elements using the ensureCapacity operation. This may reduce the amount of incremental reallocation.
+- If multiple threads access an ArrayList instance concurrently, and at least one of the threads modifies the list structurally, it must be synchronized externally.
+- The ArrayList class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed.
+
+2. LinkedList:
+- The LinkedList class is a collection which can contain many objects of the same type, just like the ArrayList.
+- The LinkedList class has all of the same methods as the ArrayList class because they both implement the List interface. This means that you can add items, change items, remove items and clear the list in the same way.
+- The LinkedList stores its items in "containers." The list has a link to the first container and each container has a link to the next container in the list. To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
+- Implements all optional list operations, and permits all elements (including null).
+- Like the arrayList, if multiple threads access a linked list concurrently, and at least one of the threads modifies the list structurally, it must be synchronized externally.
+
+3. HashMap:
+- where Arrays store items as an ordered collection (accessed by an index number), a HashMap stores items in "key/value" pairs, accessed by an index of another type (e.g. a String).
+- One object is used as a key (index) to another object (value). It can store different types: String keys and Integer values, or the same type, like: String keys and String values.
+- Hash table based implementation of the Map interface.
+- Provides all of the optional map operations, and permits null values and the null key.
+- Does not guarantee the order will remain constant over time.
+- Provides constant-time performance for the basic operations (get and put).
+
+4. HashSet:
+- A HashSet is a collection of items where every item is unique, and it is found in the java.util package.
+- Items in an HashSet are objects.
+- This class implements the Set interface, backed by a hash table (actually a HashMap instance). 
+- It does not guarantee that the order will remain constant over time.
+- Permits the null element.
+- Offers constant time performance for the basic operations (add, remove, contains and size).
+- If multiple threads access a hash set concurrently, and at least one of the threads modifies the set, it must be synchronized externally.
+
+5. TreeSet
+- TreeSet is basically an implementation of a self-balancing binary search tree. 
+- Provides guaranteed log(n) time cost for the basic operations (add, remove and contains). Therefore, this is considered one of the most efficient data structures in order to store the huge sorted data and perform operations on it.
+- If multiple threads access a tree set concurrently, and at least one of the threads modifies the set, it must be synchronized externally. 
+- A NavigableSet implementation based on a TreeMap. 
+- The elements are ordered using their natural ordering.
+
+refs:
+- w3schools.com/java/java_arraylist.asp
+- docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+- w3schools.com/java/java_linkedlist.asp
+- docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
+- w3schools.com/java/java_hashmap.asp
+- docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+- w3schools.com/java/java_hashset.asp
+- docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
+- geeksforgeeks.org/treeset-in-java-with-examples/
+- docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html
+
 ### Write an application to read a file with 10k lines of text, and output another file with the lines in sorted order (sample file)
 
 ### Write an application to read a file with 10k lines of text, and output another file with the lines in reverse sorted order
