@@ -22,7 +22,7 @@ Java training program - Apprentice level
 - When no longer needed, the object and its reference are removed from the memory by the JVM. The Java runtime calls the garbage collector to destroy all the objects. Thus, objects are born, live, and die.
 
 refs: 
-scientecheasy.com/2020/06/life-cycle-of-object-in-java.html/
+- scientecheasy.com/2020/06/life-cycle-of-object-in-java.html/
 
 ### Describe how the basic data types are represented in memory (boolean, int, long, String, array of ints, array of Objects, class with fields)
 
@@ -49,14 +49,27 @@ scientecheasy.com/2020/06/life-cycle-of-object-in-java.html/
 - For normal objects in Java, the object header consists of mark and class words plus possible alignment paddings. After the object header, there may be zero or more references to instance fields. At least 16 bytes in 64-bit architectures because of 8 bytes of the mark, 4 bytes of class, and another 4 bytes for padding.
 
 refs:
-baeldung.com/java-primitives
-geeksforgeeks.org/g-fact-46/
-tutorialspoint.com/where-does-array-stored-in-jvm-memory-in-java
-baeldung.com/java-memory-layout
+- baeldung.com/java-primitives
+- geeksforgeeks.org/g-fact-46/
+- tutorialspoint.com/where-does-array-stored-in-jvm-memory-in-java
+- baeldung.com/java-memory-layout
 
 ### Write an application to find out how many total characters can be held in a single StringBuilder before running out of memory, translate that number of characters to the number of bytes held by that StringBuilder before crashing.
 
 ### Compare and contrast StringBuffer and StringBuilder and when to use each
+
+1. StringBuffer:
+- StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.
+- StringBuffer is less efficient than StringBuilder.
+- If a string can change and will be accessed from multiple threads, use a StringBuffer because StringBuffer is synchronous, so you have thread-safety.
+2. StrinBuilder:
+- StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously.
+- StringBuilder is more efficient than StringBuffer.
+- If a string can change (for example: lots of logic and operations in the construction of the string) and will only be accessed from a single thread, using a StringBuilder is good enough.
+
+refs:
+- javatpoint.com/difference-between-stringbuffer-and-stringbuilder
+- geeksforgeeks.org/string-vs-stringbuilder-vs-stringbuffer-in-java/
 
 ### Compare/contrast use of ArrayList / LinkedList / HashMap / HashSet / TreeSet
 
