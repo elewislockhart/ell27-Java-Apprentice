@@ -67,6 +67,22 @@ refs:
 - baeldung.com/java-memory-layout
 
 ### Write an application to find out how many total characters can be held in a single StringBuilder before running out of memory, translate that number of characters to the number of bytes held by that StringBuilder before crashing.
+- See stringBuilderCrash for the completed task
+
+- 603979772
+- 603979773
+- 603979774
+- Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+- at java.util.Arrays.copyOf(Arrays.java:3332)
+- at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+- at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:448)
+- at java.lang.StringBuilder.append(StringBuilder.java:141)
+- at com.ell27_stringbuilder.App.main(App.java:13)
+- Process finished with exit code 1
+
+- Result: 603,979,774 letter 'a's were appended to the string. Since the letter 'a' only takes 1 byte, it seems the stringBuilder can
+- hold a max of 603,979,774 bytes.
+- However, looking online, the max size seems to be 2,147,483,648 chars.
 
 ### Compare and contrast StringBuffer and StringBuilder and when to use each
 
