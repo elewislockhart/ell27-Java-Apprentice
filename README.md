@@ -155,7 +155,8 @@ refs:
 - geeksforgeeks.org/treeset-in-java-with-examples/
 - docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html
 
-### Write an application to read a file with 10k lines of text, and output another file with the lines in sorted order (sample file)
+### Write an application to read a file with 10k lines of text, and output another file with the lines in sorted order
+- See sort10000lines for the completed task
 
 ### Write an application to read a file with 10k lines of text, and output another file with the lines in reverse sorted order
 
