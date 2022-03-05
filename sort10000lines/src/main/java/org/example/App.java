@@ -19,8 +19,12 @@ public class App
             String[] splitLine = line.split(" ", -2);
             line.replaceAll("^[a-zA-Z0-9]+$","");
             Arrays.sort(splitLine, String.CASE_INSENSITIVE_ORDER);
-            fileData = fileData.concat(Arrays.toString(splitLine) + "\n");
+            for (int i = 0; i < splitLine.length; i++) {
+                fileData = fileData.concat(splitLine[i] + " ");
+            }
+            fileData = fileData.concat("\n");
         }
+        System.out.println(fileData);
         scan.close();
 
         FileWriter newFile = new FileWriter("C:\\Users\\ell27\\Desktop\\Java Training Program\\ell27-Java-Apprentice\\sort10000lines\\src\\main\\java\\newFile.txt");
