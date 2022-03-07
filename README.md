@@ -1,7 +1,7 @@
 # ell27-Java-Apprentice
 Java training program - Apprentice level
 
-## Core Java
+## ***** Core Java ***** 
 
 ### Describe the lifecycle of an object instance in Java and how garbage collection works
 
@@ -167,3 +167,33 @@ refs:
 ### Write your own enum type.  Describe when you would use it.
 - See enumProject for the completed task
 - In the project I created, energy sources are listed like coal and solar. These also have associated energy values in joules and general details. The idea here would be to use this enum as part of a video game where a robot is gathering resources on a distant planet. These energy values would not ever need to be updated, so an enum makes sense. The values would only need to be obtained via a getter.
+
+
+## ***** Working with Methods, Encapsulation, & Inheritance *****
+
+### Show how to use a common piece of logic from two different classes, in three different ways: 1) by composition, 2) by inheritance, and 3) by static method calls, discuss the tradeoffs
+- for example:
+  - two different classes that write a message to a file, one in XML, one in line-oriented text, but both need to reuse logic to open the file in the same way
+
+### Create and overload constructors -- Create a class that has 4 fields and construct the class with variations of one required field and the others are optional.  Use constructor chaining as an example.
+
+### Apply encapsulation principles to a class -- Show an example of good encapsulation.  Show a bad example of encapsulation and explain why.  Additionally explain access modifiers and how they can be used as part of the class encapsulation.
+
+### Determine the effect upon object references and primitive values when they are passed  into methods that change the values -- Create a method 3 parameters, one is parameter is passed by value, one is passed by reference and one with the keyword final.  Explain each and how the method changes each one.
+
+### Write code to show how access modifiers work: private, protected, and public, talk about why you would use each of these.
+
+### Write code to show how virtual method invocation lets one implementation be swapped for another.
+### Write code that uses the instanceof operator and show how casting works.
+### Show how to override a method in a subclass, talk about plusses and minuses in doing so.
+### Show how to overload constructors and methods, talk about plusses and minuses in doing so.
+
+
+## ***** Library *****
+
+### Write an application that uses the slf4j logging library directly (can also choose log4j if you want)
+- Do the following:
+  - configure the logging using an accepted department log statement format (see Application Specific Logging)
+  - log at different logging levels (error, warn, info, debug), to see the effect of the default logging level setting
+  - turn on DEBUG in the logging config to show DEBUG output
+  - configure logging to go to both the console and a log file
