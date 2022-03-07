@@ -159,8 +159,10 @@ refs:
 - See sort10000lines for the completed task
 
 ### Write an application to read a file with 10k lines of text, and output another file with the lines in reverse sorted order
+- See reverseSort10000lines for the completed task
 
 ### Write code to show exception handling including examples of checked, unchecked, and Error exceptions
+- See ExceptionHandling for the completed task
 
 ### Write your own enum type.  Describe when you would use it.
 - See enumProject for the completed task
