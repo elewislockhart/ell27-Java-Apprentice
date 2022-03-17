@@ -176,6 +176,7 @@ refs:
   - two different classes that write a message to a file, one in XML, one in line-oriented text, but both need to reuse logic to open the file in the same way
 
 ### Create and overload constructors -- Create a class that has 4 fields and construct the class with variations of one required field and the others are optional.  Use constructor chaining as an example.
+- See OverloadedConstructors for completed task
 
 ### Apply encapsulation principles to a class -- Show an example of good encapsulation.  Show a bad example of encapsulation and explain why.  Additionally explain access modifiers and how they can be used as part of the class encapsulation.
 
