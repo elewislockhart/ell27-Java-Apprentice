@@ -179,6 +179,7 @@ refs:
 - See OverloadedConstructors for completed task
 
 ### Apply encapsulation principles to a class -- Show an example of good encapsulation.  Show a bad example of encapsulation and explain why.  Additionally explain access modifiers and how they can be used as part of the class encapsulation.
+- See Encapsulation for completed task.
 
 ### Determine the effect upon object references and primitive values when they are passed  into methods that change the values -- Create a method 3 parameters, one is parameter is passed by value, one is passed by reference and one with the keyword final.  Explain each and how the method changes each one.
 
