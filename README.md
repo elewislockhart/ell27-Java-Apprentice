@@ -171,9 +171,8 @@ refs:
 
 ## ***** Working with Methods, Encapsulation, & Inheritance *****
 
-### Show how to use a common piece of logic from two different classes, in three different ways: 1) by composition, 2) by inheritance, and 3) by static method calls, discuss the tradeoffs
-- for example:
-  - two different classes that write a message to a file, one in XML, one in line-oriented text, but both need to reuse logic to open the file in the same way
+### Show how to use a common piece of logic from two different classes, in three different ways: 1) by composition, 2) by inheritance, and 3) by static method calls, discuss the tradeoff, for example: two different classes that write a message to a file, one in XML, one in line-oriented text, but both need to reuse logic to open the file in the same way
+
 
 ### Create and overload constructors -- Create a class that has 4 fields and construct the class with variations of one required field and the others are optional.  Use constructor chaining as an example.
 - See OverloadedConstructors for completed task.
@@ -188,6 +187,8 @@ refs:
 - See AccessModifiers for completed task. 
 
 ### Write code to show how virtual method invocation lets one implementation be swapped for another.
+- See virtualMethodInvocation for completed task
+
 ### Write code that uses the instanceof operator and show how casting works.
 ### Show how to override a method in a subclass, talk about plusses and minuses in doing so.
 ### Show how to overload constructors and methods, talk about plusses and minuses in doing so.
