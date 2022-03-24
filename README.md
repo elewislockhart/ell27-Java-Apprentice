@@ -190,9 +190,17 @@ refs:
 - See virtualMethodInvocation for completed task
 
 ### Write code that uses the instanceof operator and show how casting works.
-### Show how to override a method in a subclass, talk about plusses and minuses in doing so.
-### Show how to overload constructors and methods, talk about plusses and minuses in doing so.
+- see InstanceOf for completed task 
 
+### Show how to override a method in a subclass, talk about plusses and minuses in doing so.
+- See virtualMethodInvocation for completed task
+- The main advantage of method overriding is that the class can give its own specific implementation to an inherited method without even modifying the parent class code.
+- Overridding method cannot throw checked exception wider than the exception thrown by the overriden method. We cannot reduce the visibility of the overridden method. If a method cannot be inherited, It cannot be overridden.
+
+### Show how to overload constructors and methods, talk about plusses and minuses in doing so.
+- See OverloadedConstructors for completed task.
+- The biggest advantage of Constructor overloading is flexibility which allows you to create the object in a different way and classic examples are various Collection classes. Though you should remember that once you add a constructor, a compiler will not add default no-argument constructor.
+- Overloaded methods must use different numbers or types of arguments to avoid ambiguity. If you create two methods in the same class that have the same name and accept two integers as arguments, the Java compiler will be unable to distinguish between the two, even if the input variables have different names.
 
 ## ***** Library *****
 
